@@ -65,13 +65,23 @@ let g:NERDTreeShowHidden = 1
 " Automaticaly close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-map <silent> <C-n> :NERDTreeFocus<CR>
+"map <silent> <C-n> :NERDTreeFocus<CR>
+nnoremap <silent> <Space> :NERDTreeToggle<CR>
+
+" change the leader key from "\" to ";" ("," is also popular)
+let mapleader=";"
 
 " better ESC
 inoremap jj <esc>
 
 " better save 
 inoremap jk <esc>:w<CR>
+
+" improved keyboard navigation
+nnoremap <leader>h <C-w>h
+nnoremap <leader>j <C-w>j
+nnoremap <leader>k <C-w>k
+nnoremap <leader>l <C-w>l
 
 
 " coc config
