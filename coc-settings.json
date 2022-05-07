@@ -2,7 +2,5 @@
     "javascript.validate.enable": false,
     "javascript.suggestionActions.enabled": false,
     "typescript.suggestionActions.enabled": false,
-    "css.validate": false, 
-    "stylelint.enable": true, 
-    "scss.validate": false 
+    "snippets.ultisnips.usePythonx": false
 }

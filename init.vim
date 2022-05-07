@@ -1,3 +1,4 @@
+
 " basic syntax highlighing
 syntax enable
 set nocompatible		" be improved, required
@@ -20,34 +21,8 @@ set copyindent      " copy indent from the previous line
 
 filetype off	" off
 
-call plug#begin('~/.config/nvim/plugged')
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
 
-Plug 'alvan/vim-closetag'
-Plug 'tpope/vim-surround'
-
-Plug 'overcache/NeoSolarized'
-Plug 'tpope/vim-fugitive'
-Plug 'preservim/nerdtree'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } "> file searches and more
-Plug 'ryanoasis/vim-devicons'
-Plug 'preservim/nerdcommenter'
-
-Plug 'MaxMEllon/vim-jsx-pretty'
-Plug 'leafgarland/typescript-vim'
-Plug 'pangloss/vim-javascript'
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'yaml', 'html'] }
-
-" javascript/typescript setup
-let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier']
-
-call plug#end()
+source $HOME/.config/nvim/vim-plug/plugins.vim
 
 set termguicolors
 set background=dark
