@@ -58,6 +58,12 @@ nnoremap <leader>j <C-w>j
 nnoremap <leader>k <C-w>k
 nnoremap <leader>l <C-w>l
 
+" find files with telescope
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+
+" refresh nvim
+nnoremap <leader>sv :source $MYVIMRC<CR>
+
 
 " coc config
 let g:coc_global_extensions = [

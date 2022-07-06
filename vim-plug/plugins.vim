@@ -13,15 +13,17 @@ Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --f
 
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
-
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 Plug 'overcache/NeoSolarized'
 Plug 'tpope/vim-fugitive'
 Plug 'preservim/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } "> file searches and more
 Plug 'ryanoasis/vim-devicons'
 Plug 'preservim/nerdcommenter'
+
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'leafgarland/typescript-vim'
